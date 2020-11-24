@@ -1,8 +1,10 @@
 body {
+  font-family: 'Roboto', sans-serif;
   margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   width: 1300px;
+  color: #fff;
   background-color: #3C384B;
 }
 .nav_hidden{
@@ -22,6 +24,7 @@ body {
   text-decoration: none;
 }
 .logo{
+  font-weight: 700;
   font-size: 35px;
   line-height: 43px;
   letter-spacing: 0.08em;
@@ -33,11 +36,165 @@ body {
   letter-spacing: 0.12em;
   vertical-align: super;
 }
-button{
+.btn{
   padding: 16px 25px;
   background: #EB3F57;
   box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.25);
   border-radius: 5px;
   color: #fff;
   outline: none;
+  cursor: pointer;
 }
+.social>a{
+  position: relative;
+  
+}
+/* .social a:first-of-type>img{
+  padding-left: 0;
+} */
+.social>a>img {
+  padding-left: 35px;
+  z-index: 1;
+}
+.social>.circle::before{
+  content: '';
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: -11px;
+  left: 20px;
+  /* border: 1px solid #444054; */
+  border-radius: 50%;
+  background: #444054;
+  z-index: 2;
+}
+.circle p{
+  display: none;
+}
+.tell img{
+  margin-right: 15px;
+}
+
+
+
+
+/* Ferst Section */
+.content {
+  position: relative;
+}
+.title{
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 55px;
+  letter-spacing: 0.08em;
+  padding-bottom: 39px;
+}
+.title span{
+  font-weight: 300;
+  font-size: 25px;
+  position: relative;
+  cursor: pointer;
+  border:  1px solid #545061;
+  border-radius: 5px;
+  padding: 19px 21px 14px 55px;
+}
+.title span::before{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  background-image: url(../image/first/icon/love.svg);
+  background-position: center;
+  background-size: cover;
+  top: 20px;
+  left: 15px;
+  width: 28px;
+  height: 38px;
+}
+.inform{
+  display: flex;
+  position: relative;
+}
+.inform_left{
+  margin-top: 100px;
+  z-index: 2;
+}
+.inform_left .title{
+  max-width: 600px;
+}
+.inform .inform_image{
+  position: absolute;
+  right: -100px;
+  box-shadow: inset 0px 0px 150px 250px #3C384B,
+              inset 0px 0px 80px 20px #3C384B;
+}
+.inform_image .second_bg{
+  position: relative;
+  z-index: -2;
+}
+
+
+
+.info_text{
+  max-width: 470px;
+  line-height: 27px;
+}
+/* .info_text h2{
+  margin: 0;
+  font-weight: 700;
+} */
+h2.sub_title {
+  margin: 0;
+  font-weight: 700;
+}
+
+
+.btn_wrap{
+  display: flex;
+  padding-top: 70px;
+}
+.btn_wrap p{
+  max-width: 400px;
+  font-size: 15px;
+  line-height: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0 5px 5px 0;
+  padding: 19px 26px 20px 40px;
+  margin: 0;
+}
+
+
+.category{
+  max-width: 1200px;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #302C3D;
+  border-radius: 5px;
+}
+.subcat{
+  max-width: 300px;
+}
+.subcat img,
+.subcat .subtitle,
+.cat_text{
+  padding-left: 50px;
+}
+.subcat img{
+  padding-top: 30px;
+}
+.subcat .subtitle{
+  font-size: 15px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+.cat_text{
+  padding-bottom: 38px;
+  opacity: 0.7
+}
+/* Ferst Section */
