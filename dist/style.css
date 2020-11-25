@@ -10,6 +10,11 @@ body {
 .nav_hidden{
   display: none;
 }
+
+
+
+
+/* Navigation and social */
 .nav_bar{
   display: flex;
   justify-content: space-between;
@@ -39,22 +44,26 @@ body {
 .btn{
   padding: 16px 25px;
   background: #EB3F57;
-  box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.25);
+  box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.25),
+                    0 0 79px -18px #FF0000;
   border-radius: 5px;
   color: #fff;
   outline: none;
   cursor: pointer;
 }
-.social>a{
+.social{
+  display: flex;
+}
+.social>.circle{
   position: relative;
-  
+  display: flex;
+  align-items: center;
 }
 /* .social a:first-of-type>img{
   padding-left: 0;
 } */
 .social>a>img {
   padding-left: 35px;
-  z-index: 1;
 }
 .social>.circle::before{
   content: '';
@@ -62,15 +71,33 @@ body {
   width: 42px;
   height: 42px;
   position: absolute;
-  top: -11px;
-  left: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-10%, -50%);
   /* border: 1px solid #444054; */
   border-radius: 50%;
   background: #444054;
-  z-index: 2;
+  z-index: -1;
 }
 .circle p{
   display: none;
+}
+.telephone{
+  position: relative;
+}
+.telephone>.tell::before{
+  content: '';
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  background: transparent;
+  z-index: -1;
 }
 .tell img{
   margin-right: 15px;
