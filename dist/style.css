@@ -43,13 +43,19 @@ body {
 }
 .btn{
   padding: 16px 25px;
-  background: #EB3F57;
-  box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.25),
-                    0 0 79px -18px #FF0000;
+  background: transparent;
+  border: 1px solid #E43E56;
+  box-shadow: none;
   border-radius: 5px;
   color: #fff;
   outline: none;
   cursor: pointer;
+  transition: all .5s ease;
+}
+.btn:hover{
+  background: #EB3F57;
+  box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.25),
+                    0 0 79px -18px #FF0000;
 }
 .social{
   display: flex;
@@ -225,3 +231,83 @@ h2.sub_title {
   opacity: 0.7
 }
 /* Ferst Section */
+
+
+/* Second section */
+
+
+.wrap{
+  padding-top: 150px;
+  padding-bottom: 120px;
+}
+.wrap h2{
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 50px;
+  letter-spacing: 0.08em;
+  max-width: 500px;
+  position: relative;
+}
+h2 .w300{
+  font-weight: 300;
+}
+h2 span:not(:first-child){
+  font-size: 16px;
+  line-height: 27px;
+  position: absolute;
+  top: -8px;
+  left: 351px;
+  border:  1px solid #545061;
+  border-radius: 5px;
+  padding: 19px 21px 14px 21px;
+  width: max-content;
+}
+.inner{
+  display: grid;
+  max-width: 700px;
+  padding-top: 70px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 11px;
+}
+.inner .short_inner:not(:last-child){
+  background-color: #302C3D;
+  border-radius: 5px;
+}
+.short_inner{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.short_inner img{
+  padding-top: 30px;
+  padding-left: 25px;
+}
+.short_inner h3{
+  margin: 0;
+  padding-top: 25px;
+  padding-left: 25px;
+  padding-right: 50px;
+  padding-bottom: 40px;
+}
+
+.button button{
+  width: 38px;
+  height: 38px;
+  border: 1px solid #E43E56;
+  color: #fff;
+  box-sizing: border-box;
+  background-color: transparent;
+  border-radius: 5px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+.button button:hover{
+  background-color: #E43E56;
+  border: none;
+}
+
+
+/* Second section */
