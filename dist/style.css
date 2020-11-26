@@ -306,7 +306,7 @@ h2 span:not(:first-child){
 }
 .button button:hover{
   background-color: #E43E56;
-  border: none;
+  /* border: none; */
 }
 
 
