@@ -125,12 +125,6 @@ body {
     box-shadow: none
   }
 }
-
-
-/**
-* Формируем стиль заголовка (логотип) панели 
-*/
-
 .nav h2 {
   padding: 0;
   margin: 54px 0px 65px 83px;
@@ -158,9 +152,6 @@ body {
   text-transform: uppercase;
 }
 
-
-/*плавное появление заголовка (логотипа) при раскрытии панели */
-
 [id='nav-toggle']:checked ~ .nav h2 {
   opacity: 1;
   transform: scale(1, 1);
@@ -168,13 +159,6 @@ body {
   -moz-transform: scale(1, 1);
   -webkit-transform: scale(1, 1);
 }
-
-
-/**
-* формируем непосредственно само меню
-* используем неупорядоченный список для пунктов меню
-* прикрутим трансфомации и плавные переходы
-*/
 
 .nav > ul {
   display: block;
@@ -204,9 +188,6 @@ body {
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
-
-
-/* определяем интервалы появления пунктов меню */
 
 .nav > ul > li:nth-child(2) {
   -webkit-transition: opacity .5s .2s, -webkit-transform .5s .2s;
@@ -250,11 +231,6 @@ body {
   transition: opacity .5s 1s, transform .5s 1s;
 }
 
-
-/**
-* оформление ссылок пунктов меню
-*/
-
 .nav > ul > li > a {
   display: inline-block;
   position: relative;
@@ -273,22 +249,12 @@ body {
   transition: color .5s ease, padding .5s ease;
 }
 
-
-/**
-* состояние ссылок меню при наведении
-*/
-
 .nav > ul > li > a:hover,
 .nav > ul > li > a:focus {
   color: #fff;
   opacity: 1;
   padding-left: 15px;
 }
-
-
-/**
-* линия подчеркивания ссылок меню
-*/
 
 .nav > ul > li > a:before {
   content: '';
@@ -315,16 +281,6 @@ body {
   transition: width .5s ease;
 }
 
-/* 
-left: -102px;
-    top: 25px;
-    height: 1px;
-    width: 20%; */
-
-/**
-* анимируем линию подчеркивания 
-* ссылок при наведении
-*/
 .nav > ul > li > a:hover{
   color: #EB3F57;
 }
@@ -341,14 +297,6 @@ left: -102px;
   -webkit-transition: width 0s ease;
   transition: width 0s ease;
 }
-
-
-/* фон затемнения на основной контент 
-* при этом элементы блокируютя
-* спорная такая фича, если оно вам надо
-* просто раскомментируйте
-*/
-
 
 .mask-content {
   display: block;
