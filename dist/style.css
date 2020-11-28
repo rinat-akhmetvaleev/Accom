@@ -19,12 +19,12 @@ body {
   bottom: 0;
   margin: 0;
   left: -500px;
-  padding: 15px 20px;
   -webkit-transition: left 0.3s;
   -moz-transition: left 0.3s;
   transition: left 0.3s;
   background: #302C3D;
   z-index: 2000;
+  overflow: hidden;
 }
 
 .nav-toggle {
@@ -50,24 +50,11 @@ body {
   display: none;
 }
 
-
-/**
-* изменение положения переключателя 
-* при просмотре на мобильных устройствах
-* когда навигация раскрыта, распологаем внутри панели
-*/
-
-[id='nav-toggle']:checked ~ .nav > .nav-toggle {
+[id='nav-toggle']:checked ~ .nav_bar > .nav-toggle {
   left: auto;
   right: 2px;
   top: 1em;
 }
-
-
-/**
-* Когда флажок установлен, открывается панель
-* используем псевдокласс:checked
-*/
 
 [id='nav-toggle']:checked ~ .nav {
   left: 0;
@@ -77,34 +64,11 @@ body {
   overflow-y: auto;
 }
 
-
-/* 
-* смещение контента страницы
-* на размер ширины панели,
-* фишка необязательная, на любителя
-*/
-
-[id='nav-toggle']:checked ~ main > article {
-  -webkit-transform: translateX(320px);
-  -moz-transform: translateX(320px);
-  transform: translateX(445px);
-}
-
-
-/*
-* изменение символа переключателя,
-* привычный крестик (MULTIPLICATION X), 
-* вы можете испльзовать любой другой значок
-*/
-
-[id='nav-toggle']:checked ~ .nav > .nav-toggle:after {
+[id='nav-toggle']:checked ~ .nav_bar > .nav-toggle:after {
   content: '\2715';
+  width: 19px;
+  height: 19px;
 }
-
-/**
-* позаботьтимся о средних и маленьких экранах
-* мобильных устройств
-*/
 
 @media screen and (min-width: 320px) {
   html,
@@ -350,6 +314,10 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   opacity: 0.6;
+  transition: .2s ease;
+}
+.nav .carriers:hover{
+  opacity: 1;
 }
 
 
@@ -649,5 +617,36 @@ h2 span:not(:first-child){
   /* border: none; */
 }
 
+.cargo_info{
+  position: relative;
+}
+.bg_image{
+  position: absolute;
+  background-image: url(../image/cargo/bg_1.png);
+  width: 760px;
+  height: 860px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  top: 0;
+  right: 0;
+}
 
+
+
+
+
+.inner .questions{
+  font-size: 14px;
+  line-height: 30px;
+}
+.inner .questions::before{
+  content: '';
+  width: 13px;
+  height: 13px;
+  background-image: url(../image/cargo/icon/question.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 /* Second section */
