@@ -46,6 +46,12 @@ body {
   background: #302C3D;
   z-index: 2000;
   overflow: hidden;
+  
+}
+@media screen and (min-height: 801px){
+  .nav h2{
+    margin: 30px 0px 0px 83px;
+  }
 }
 
 .nav-toggle {
