@@ -1,0 +1,158 @@
+.wrap{
+    margin-bottom: 120px;
+    margin-top: 150px;
+    position: relative;
+}
+  
+.bg_image{
+    position: absolute;
+    background-image: url(../image/cargo/bg_cargo.png); 
+    width: 100%;
+    height: 750px;
+    top: 0;
+    left: 1010px;
+    z-index: 100;
+}
+  
+.bg_image::after{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 1010px;
+    top: 0;
+    box-shadow: -5px -5px 200px 100px #514B62;
+    z-index: 10;
+}
+  
+.wrap h2{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0.08em;
+    max-width: 500px;
+    position: relative;
+}
+
+h2 .w300{
+    font-weight: 300;
+}
+
+h2 .cargo_features:not(:first-child){
+    font-size: 16px;
+    line-height: 27px;
+    position: absolute;
+    top: -8px;
+    left: 351px;
+    border:  1px solid #545061;
+    border-radius: 5px;
+    padding: 19px 21px 14px 21px;
+    width: max-content;
+}
+
+.inner{
+    display: grid;
+    max-width: 700px;
+    padding-top: 70px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 11px;
+}
+
+.inner .short_inner:not(:last-child){
+    background-color: #302C3D;
+    border-radius: 5px;
+}
+
+.short_inner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.short_inner img{
+    padding-top: 30px;
+    padding-left: 25px;
+}
+
+.short_inner h3{
+    margin: 0;
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+}
+  
+.button button{
+    width: 38px;
+    height: 38px;
+    border: 1px solid #E43E56;
+    color: #fff;
+    box-sizing: border-box;
+    background-color: transparent;
+    border-radius: 5px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.button button:hover{
+    background-color: #E43E56;
+}
+  
+.cargo_info{
+    position: relative;
+}
+  
+.section_foter{
+    padding-top: 55px;
+    display: flex;
+}
+  
+.card{
+    display: flex;
+    position: relative;
+    width: 337px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 24px 24px 24px 158px;
+}
+  
+.card img{
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+  
+.card_toch{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 40px;
+}
+  
+.card_toch .questions{
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all .2s ease;
+}
+
+.card_toch .questions::after{
+    content: '';
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    background-image: url(../image/cargo/icon/question.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+}
+.card_toch .questions:hover{
+    color: rgba(255, 255, 255, 1);
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+}

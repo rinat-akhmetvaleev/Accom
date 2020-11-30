@@ -1,0 +1,29 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    background-color: #3C384B;
+}
+  
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+}
+  
+.btn {
+    padding: 16px 25px;
+    background: transparent;
+    border: 1px solid #E43E56;
+    box-shadow: none;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+.btn:hover{
+    background: #EB3F57;
+    box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.25),
+                      0 0 79px -18px #FF0000;
+}

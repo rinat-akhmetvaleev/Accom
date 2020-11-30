@@ -1,0 +1,86 @@
+.direction{
+    background-color: #2F2C3D;
+    padding-top: 170px;
+    padding-bottom: 130px;
+}
+
+.column{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.column .direction_bg{
+    position: absolute;
+    top: 10em;
+    left: 50%;
+    overflow-y: hidden;
+    transform: translateX(-50%);
+    box-shadow: inset 0px 0px 300px 280px #2F2C3D,
+                inset 0px 0px 300px 380px #2F2C3D;
+    z-index: -1;
+}
+/* .bg_img{
+} */
+
+/* .column{
+    background-image: url(../image/earch/bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: inherit;
+    box-shadow: inset 0px 0px 300px 280px #2F2C3D,
+                inset 0px 0px 300px 380px #2F2C3D;
+} */
+
+
+.direction_title{
+    position: relative;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0.08em;
+    padding-bottom: 130px;
+}
+
+.direction_title .w300{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    position: absolute;
+    top: -3px;
+    left: 300px;
+    border:  1px solid #545061;
+    border-radius: 5px;
+    padding: 12px 31px;
+    width: max-content;
+}
+
+.direction_title .fw_regular{
+    font-weight: 300;
+}
+
+.help_blog{
+    max-width: 230px;
+    padding: 0 0 25px 25px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin-bottom: 45px;
+}
+.help_blog:hover{
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.help_blog ul li{
+    list-style: none;
+}
+.help_blog ul li a,
+.help_blog .details{
+    text-decoration: none;
+    color: #fff;
+}
+
+.help_blog .details,
+.help_blog ul li a:hover{
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.1);
+}
