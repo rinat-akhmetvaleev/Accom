@@ -1,6 +1,6 @@
-@import '/dist/header.css' all;
-@import '/dist/main.css' all;
-@import '/dist/navigation.css' all;
-@import '/dist/first.css' all;
-@import '/dist/cargo.css' all;
-@import '/dist/direction.css' all;
+@import 'header.css' all;
+@import 'main.css' all;
+@import 'navigation.css' all;
+@import 'first.css' all;
+@import 'cargo.css' all;
+@import 'direction.css' all;
