@@ -121,7 +121,7 @@
     -webkit-transform: scale(1, 1);
 }
   
-.nav > ul {
+.nav > .menu {
     display: block;
     list-style: none;
     padding-left: 83px;
