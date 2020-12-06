@@ -44,9 +44,6 @@ h2 .cargo_features:not(:first-child){
     position: absolute;
     top: -8px;
     left: 351px;
-    border:  1px solid #545061;
-    border-radius: 5px;
-    padding: 19px 21px 14px 21px;
     width: max-content;
 }
 

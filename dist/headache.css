@@ -1,0 +1,103 @@
+.headache .container{
+    align-items: center;
+}
+.headache .container .title span{
+    max-width: 570px;
+}
+
+.headache .container .title{
+    font-weight: 300;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0.08em;
+    padding-bottom: 0;
+}
+
+.headache .container .title b{
+    font-weight: 700;
+}
+
+.headache .container p{
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.list_card{
+    padding-top: 90px;
+    columns: 570px 2;
+}
+.list_card:nth-child(1){
+    padding-right: 30px;
+}
+.headache_card{
+    max-width: 630px;
+    display: flex;
+    background-color: #353141;
+    margin-bottom: 30px;
+}
+.headache_card img{
+    max-width: 283px;
+    flex-wrap: wrap;
+}
+.headache_card_text * {
+    padding-left: 40px;
+    padding-right: 24px;
+}
+.headache_card_text img{
+    padding-top: 53px;
+}
+
+.btn_center{
+    display: flex;
+    justify-content: center;
+}
+
+.all{
+    padding: 25px 45px;
+}
+
+
+.saved{
+    display: flex;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+}
+
+.saved .saved_price{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+
+    padding: 25px;
+    background: #D4445E;
+    border: 1px solid #E43E56;
+    box-shadow: none;
+    border-radius: 5px;
+    color: #fff;
+    transition: all .5s ease;
+    position: relative;
+}
+.saved .saved_price::before{
+    content: '';
+    background-image: url(../image/headache/icon/euro.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    right: 0;
+    bottom: -33px;
+}
+.saved p{
+    max-width: 400px;
+    font-size: 15px;
+    line-height: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 0 5px 5px 0;
+    padding: 19px 26px 20px 40px;
+    margin: 0;
+}
+
+
+
+
