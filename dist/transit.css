@@ -89,6 +89,12 @@
     height: 870px;
 }
 
+@media screen and (max-width: 1800px){
+    .transit_bg{
+        right: 5%;
+    }
+}
+
 
 
 
