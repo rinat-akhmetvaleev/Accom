@@ -10,6 +10,13 @@ body {
     margin: 0 auto;
     max-width: 1300px;
 }
+
+.title{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 55px;
+    padding-bottom: 39px;
+}
   
 .btn {
     padding: 16px 25px;

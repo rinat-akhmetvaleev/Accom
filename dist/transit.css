@@ -1,3 +1,95 @@
 .transit{
     padding-top: 40px;
+    padding-bottom: 70px;
+    position: relative;
 }
+
+.transit_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.transit_title .tt{
+    text-align: center;
+}
+
+.transit_subtitle{
+    display: flex;
+    align-items: center;
+}
+
+.transit_subtitle p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    max-width: 355px;
+    margin-right: 25px;
+    text-align: center;
+}
+
+.transit_subtitle span{
+    height: 34px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #545061;
+    border-radius: 5px;
+    padding: 15px 21px 3px 50px;
+}
+
+.transit_subtitle span::before{
+    content: '';
+    position: absolute;
+    display: inline-block;
+    background-image: url(../image/transit/icon/heart.svg);
+    background-position: center;
+    background-size: cover;
+    top: 50%;
+    transform: translateY(-40%);
+    left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.transit_cards{
+    padding-top: 90px;
+    max-width: 870px;
+    height: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.transit_card{
+    background-color: #332F41;
+    border-radius: 5px;
+}
+
+.trans_card {
+    padding: 26px 30px 34px 26px;
+}
+
+.transit_card h3{
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 27px;
+}
+.transit_bg{
+    position: absolute;
+    right: 230px;
+    top: 400px;
+}
+.transit_img_bg{
+    width: 600px;
+    height: 870px;
+}
+
+
+
+
+

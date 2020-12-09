@@ -2,14 +2,6 @@
     position: relative;
 }
 
-.title{
-    font-weight: 700;
-    font-size: 35px;
-    line-height: 55px;
-    letter-spacing: 0.08em;
-    padding-bottom: 39px;
-}
-
 .title .first_title{
     padding-left: 55px;
     cursor: pointer;
