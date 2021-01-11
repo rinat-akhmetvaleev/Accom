@@ -110,6 +110,42 @@ h2.sub_title {
     padding-bottom: 38px;
     opacity: 0.7
 }
-.tooltip{
-    display: none;
+.tooltip {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    width: 200%;
+    top: 131%;
+    left: -2px;
+    padding: 35px;
+    cursor: auto;
+    max-width: 500px;
+    line-height: 25px;
+    background-color: #fff;
+    color: #000;
+}
+
+.first_title:hover .tooltip{
+    opacity: 1;
+    visibility: visible;
+}
+.tooltip:before{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 10%;
+    border-left: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+.tooltip::after{
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: calc(10% - 20px);
+    border-left: 10px solid transparent;
+    border-right: 10px solid #fff;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
 }
