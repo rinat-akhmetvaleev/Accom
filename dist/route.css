@@ -1,0 +1,141 @@
+.route_bg{
+    width: 850px;
+    height: 530px;
+}
+.route_title h2{
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    display: inline-block;
+}
+.route_title span{
+    font-weight: 300;
+    font-size: 16px;
+    vertical-align: top;
+    position: relative;
+    border: 1px solid #545061;
+    border-radius: 5px;
+    padding: 19px 21px 14px 21px;
+    margin-left: 25px;
+}
+.red{
+    display: inline-block;
+    color: #E43E56;
+    font-weight: 700;
+}
+.route_subtitle p{
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.route_subtitle{
+    margin-top: 25px;
+    margin-bottom: 90px;
+}
+.form{
+    background-color: #3C374B;
+    padding-left: 50px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.form_subtitle span{
+    background-color: rgba(255, 255, 255, 0.03);
+    padding: 25px 53px;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+}
+.form_subtitle .active{
+    background-color: #3C374B;
+}
+
+.points{
+    padding-top: 50px;
+    margin-top: 25px;
+}
+.you_get{
+    background-color: #302C3D;
+    display: inline-block;
+    border-radius: 5px;
+    position: absolute;
+    top: 40px;
+    right: 35px;
+    padding-bottom: 150px;
+}
+.you_get ul{
+    padding-left: 50px;
+}
+.you_get ul li{
+    max-width: 215px;
+    list-style: none;
+    margin-bottom: 38px;
+    position: relative;
+}
+.you_get ul li::before{
+    content: '';
+    background-repeat: no-repeat;
+    height: 21px;
+    width: 21px;
+    position: absolute;
+    left: -35px;
+}
+.list_1::before{
+    background-image: url(../image/optimal/icon/consultations.svg);
+}
+.list_2::before{
+    background-image: url(../image/optimal/icon/discount.svg);
+}
+.list_3::before{
+    background-image: url(../image/optimal/icon/reviews.svg);
+}
+.list_4::before{
+    background-image: url(../image/optimal/icon/bonus.svg);
+}
+.get_title{
+    display: flex;
+    padding-top: 30px;
+}
+.get_title img{
+    width: 116px;
+    height: 103px;
+}
+.points_title,
+.description_title,
+.comments_title{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+}
+.form>div>input{
+    max-width: 300px;
+    padding: 20px 25px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    font-size: 14px;
+    line-height: 29px;
+}
+.mw-270{
+    max-width: 270px;
+}
+.form>div>input:focus{
+    border: 1px solid #EB3F57;
+}
+.from{
+    position: relative;
+}
+.from::before{
+    content: 'url(../image/optimal/icon/where.svg)';
+    display: block;
+    /* background-image: ; */
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
