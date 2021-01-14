@@ -415,23 +415,24 @@
                     <span class="active">Заполните форму</span><span>Расчет стоимости и сроков</span>
                 </div>
                 <div class="form">
-                    <div class="points">
+                    <div class="form_container">
+                        <span class="short_title short_title-1">01</span>
                         <h3 class="points_title">Укажите пункт отправки<br>и назначения груза</h3>
+                        <a class="tell" href="#">Экспресс-расчёт по телефону</a>
                         <input class="from" type="text" placeholder="Откуда, например Москва">
                         <input class="to" type="text" placeholder="Куда, например Италия, город Рим">
-                    </div>
-                    <div class="description">
+                        <span class="short_title short_title-2">02</span>
                         <h3 class="description_title">Опишите груз</h3>
                         <span class="mw-270">Укажите тип, габариты, по желанию можете прикрепить фото или схему груза</span>
-                        <input type="text" placeholder="Например, бульдозер 25 тонн">
-                        <button class="attach" type="file" accept>Прикрепить файл</button>
-                    </div>
-                    <div class="comments">
+                        <input class="description" type="text" placeholder="Например, бульдозер 25 тонн">
+                        <a class="attach" type="file">Прикрепить файл</a>
+                        <span class="short_title short_title-3">03</span>
                         <h3 class="comments_title">Комментарий или вопрос</h3>
-                        <span>Не обязательное поле</span>
-                        <input type="text" placeholder="Например, какие сроки доставки?">
+                        <span class="optional">Не обязательное поле</span>
+                        <input class="quest" type="text" placeholder="Например, какие сроки доставки?">
+                        
+                        <button class="btn form_btn">Рассчитать стоимость</button>
                     </div>
-                    <button class="btn">Рассчитать стоимость</button>
                     <div class="you_get">
                         <div class="get_title">
                             <img src="image/optimal/payment1.png" alt="get icon">
