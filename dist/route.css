@@ -25,15 +25,29 @@
     color: #E43E56;
     font-weight: 700;
 }
+.route_subtitle{
+    margin-top: 25px;
+    margin-bottom: 90px;
+}
+.route_title{
+    position: relative;
+}
+.route_bg{
+    position: absolute;
+    top: 25%;
+    right: -25%;
+}
+.embellishment {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    width: 270px;
+}
 .route_subtitle p{
     font-weight: 300;
     font-size: 16px;
     line-height: 27px;
     color: rgba(255, 255, 255, 0.5);
-}
-.route_subtitle{
-    margin-top: 25px;
-    margin-bottom: 90px;
 }
 .form{
     background-color: #3C374B;
@@ -173,8 +187,8 @@
     margin-right: 10px;
     width: 14px;
     height: 14px;
-
 }
+
 
 /* Grid */
 .form_container{
@@ -259,4 +273,133 @@ span.mw-270 {
     grid-column-start: 2;
     grid-row-start: 10;
     justify-self: end;
+}
+
+
+/* tab cost calculation */
+.get_date{
+    padding-top: 60px;
+}
+.get_title--short{
+    padding: 15px 30px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+.get_sub-title{
+    padding-top: 15px;
+    padding-bottom: 45px;
+    font-size: 30px;
+    line-height: 41px;
+}
+.number_info--wrapper{
+    position: relative;
+}
+.number_info--wrapper>img{
+    width: 800px;
+    position: absolute;
+    top: -190px;
+    right: -550px;
+}
+.calc_short_title{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 41px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.get_calc{
+    width: 450px;
+    height: 250px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.share{
+    align-self: center;
+    justify-self: center;
+    background: #FFF;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: #000;
+    padding: 20px 30px 20px 40px;
+    width: 125px;
+    text-align: center;
+    cursor: pointer;
+}
+.share:hover{
+    background: #EB3F57;
+    box-shadow: 0px 0px 20px 5px rgba(255, 0, 0, 0.501);
+    color: #fff;
+}
+.share::before{
+    content: '';
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 20px;
+}
+.share_1::before{
+    background-image: url(../image/icon/phone.svg);
+}
+.share_2::before{
+    background-image: url(../image/icon/whats.svg);
+}
+.share_3::before{
+    background-image: url(../image/icon/viber.svg);
+}
+.share_4::before{
+    background-image: url(../image/icon/telegram.svg);
+}
+.share:hover .share_1::before{
+    fill: #fff;
+}
+
+
+.you_namber{
+    display: flex;
+    flex-direction: column;
+    padding-top: 45px;
+    padding-bottom: 70px;
+}
+.you_namber>input{
+    max-width: 275px;
+    background: #504B5D;
+    border: 1px solid #736F7D;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 15px 50px 15px 50px;
+    outline: none;
+}
+.you_namber>span{
+    font-size: 16px;
+    line-height: 41px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.not_call{
+    display: flex;
+    align-items: center;
+}
+.not_call .btn{
+    height: 80px;
+    width: 280px;
+}
+.not_call--text{
+    width: 250px;
+    margin-left: 50px;
+}
+
+
+
+
+/* JS manipulation */
+.form_container{
+    /* display: none; */
+}
+.get_date{
+    display: none;
 }
