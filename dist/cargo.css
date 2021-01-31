@@ -56,7 +56,7 @@ h2 .cargo_features:not(:first-child){
 }
 
 .inner .short_inner:not(:last-child){
-    background-color: #302C3D;
+    background-color: var(--light_bg);
     border-radius: 5px;
 }
 
@@ -83,7 +83,7 @@ h2 .cargo_features:not(:first-child){
 .button button{
     width: 38px;
     height: 38px;
-    border: 1px solid #E43E56;
+    border: 1px solid var(--red_btn);
     color: #fff;
     box-sizing: border-box;
     background-color: transparent;
@@ -95,7 +95,7 @@ h2 .cargo_features:not(:first-child){
 }
 
 .button button:hover{
-    background-color: #E43E56;
+    background-color: var(--red_btn);
 }
   
 .cargo_info{
@@ -111,7 +111,7 @@ h2 .cargo_features:not(:first-child){
     display: flex;
     position: relative;
     width: 337px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--grey_dark);
     border-radius: 5px;
     padding: 24px 24px 24px 158px;
 }
@@ -135,9 +135,9 @@ h2 .cargo_features:not(:first-child){
     font-size: 14px;
     line-height: 20px;
     text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-    padding-top: 20px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--grey_light);
+    margin-top: 20px;
+    border-bottom: 1px solid var(--grey_dark);
     transition: all .2s ease;
 }
 
@@ -152,8 +152,8 @@ h2 .cargo_features:not(:first-child){
     margin-left: 10px;
 }
 .card_toch .questions:hover{
-    color: rgba(255, 255, 255, 1);
-    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    color: var(--grey_light-hover);
+    border-bottom: 1px solid var(--grey_light-hover);
 }
 .questions_tooltip{
     opacity: 0;

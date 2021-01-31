@@ -1,0 +1,10 @@
+:root {
+    --light_bg: #302C3D;
+    --dark_bg: #2F2C3D;
+    --red_btn: #E43E56;
+    --grey_dark: rgba(255, 255, 255, 0.1);
+    --border_gery: rgba(255, 255, 255, 0.3);
+    --grey_light: rgba(255, 255, 255, 0.6);
+    --grey_light-hover: rgba(255, 255, 255, 1);
+    --btn_bg: #3C374B;
+}

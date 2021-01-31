@@ -66,7 +66,7 @@ h2.sub_title {
     max-width: 400px;
     font-size: 15px;
     line-height: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--grey_dark);
     border-radius: 0 5px 5px 0;
     padding: 19px 26px 20px 40px;
     margin: 0;
@@ -80,7 +80,7 @@ h2.sub_title {
     margin-right: auto;
     display: flex;
     justify-content: space-between;
-    background-color: #302C3D;
+    background-color: var(--light_bg);
     border-radius: 5px;
 }
 
