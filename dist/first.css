@@ -80,7 +80,7 @@ h2.sub_title {
     margin-right: auto;
     display: flex;
     justify-content: space-between;
-    background-color: var(--light_bg);
+    background-color: var(--dark_bg);
     border-radius: 5px;
 }
 

@@ -56,7 +56,7 @@ h2 .cargo_features:not(:first-child){
 }
 
 .inner .short_inner:not(:last-child){
-    background-color: var(--light_bg);
+    background-color: var(--dark_bg);
     border-radius: 5px;
 }
 
