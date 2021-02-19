@@ -60,11 +60,13 @@
 .form_subtitle{
     padding-bottom: 25px;
 }
-.form_subtitle span{
+.form_subtitle a{
+    text-decoration: none;
     background-color: rgba(255, 255, 255, 0.03);
     padding: 25px 53px;
     border-radius: 5px 5px 0 0;
     cursor: pointer;
+    color: inherit;
 }
 .form_subtitle .active{
     background-color: #3C374B;
@@ -402,4 +404,7 @@ span.mw-270 {
 }
 .get_date{
     display: none;
+}
+.form .form_container-active{
+    display: block;
 }
