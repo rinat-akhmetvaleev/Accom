@@ -104,3 +104,119 @@
     height: 200px;
     width: 370px;
 }
+
+/* Revisews */
+
+.reviews_text{
+    display: flex;
+    justify-content: space-between;
+}
+.reviws_title{
+    margin-bottom: 50px;
+}
+.reviws_title span{
+    font-weight: 300;
+    font-size: 16px;
+    vertical-align: super;
+    position: relative;
+    border: 1px solid #545061;
+    border-radius: 5px;
+    padding: 19px 21px 14px 21px;
+    margin-left: 25px;
+}
+.review_title{
+    font-weight: bold;
+    font-size: 35px;
+    line-height: 15px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+.reviws_title .review_text{
+    max-width: 530px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.customer_contacts{
+    display: flex;
+}
+.customer_text p{
+    max-width: 340px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+}
+.customer_icon{
+    background-image: url(../image/free/icon/mail.svg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: center;
+    width: 21px;
+    height: 21px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    padding: 15px;
+    margin-right: 25px;
+}
+
+.reviesw_button{
+    margin-bottom: 60px;
+}
+.reviesw_button{
+    display: inline-block;
+    background-color: var(--dark_bg);
+    border-radius: 5px;
+    padding: 5px;
+}
+.reviews_btn{
+    background-color: var(--dark_bg);
+    padding: 10px 35px;
+    border: 1px solid var(--dark_bg);
+    color: #fff;
+    opacity: .5;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+.reviews_btn--active{
+    background-color: var(--light_bg);
+    border: 1px solid var(--light_bg);
+    opacity: 1;
+}
+
+.slid{
+    display: flex;
+    justify-content: space-between;
+}
+.slid_1,
+.slid_2{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid var(--border_gery);
+    border-radius: 5px;
+    padding: 46px;
+}
+.slide_img{
+    width: 260px;
+    height: 360px;
+}
+.slid_2{
+    display: none;
+}
+
+.slide_title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 20px;
+    margin-top: -25px;
+}
+.slide_title .w300{
+    display: inline-block;
+}
+.slide_info{
+    max-width: 450px;
+    padding-right: 50px;
+}
