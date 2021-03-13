@@ -1,4 +1,11 @@
-.portfolio-title span{
+.portfolio {
+    background-color: var(--dark_bg);
+}
+.portfolio_title{
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.portfolio_title span{
     font-weight: 300;
     font-size: 16px;
     vertical-align: super;
