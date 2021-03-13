@@ -155,7 +155,7 @@ h2 .cargo_features:not(:first-child){
     color: var(--grey_light-hover);
     border-bottom: 1px solid var(--grey_light-hover);
 }
-.questions_tooltip{
+.card_toch .questions .questions_tooltip{
     opacity: 0;
     visibility: hidden;
     position: absolute;
