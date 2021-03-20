@@ -295,7 +295,8 @@
     background-color: var(--red_btn);
 }
 .reviews_footer,
-.reviews_footer-info{
+.reviews_footer-info,
+.portfolio_footer-info{
     display: flex;
     justify-content: space-between;
 }
