@@ -1,0 +1,75 @@
+.team{
+    background-color: var(--dark_bg);
+}
+
+p .w600{
+    font-weight: 600;
+}
+
+.team_header{
+    max-width: 690px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.team_subTitle p{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.2);
+    padding: 30px 0;
+    margin: 0;
+}
+
+.team_title h2{
+    font-size: 35px;
+    line-height: 50px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding-bottom: 25px;
+}
+
+.team_info p{
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.team_composition{
+    padding-bottom: 550px;
+}
+.team_composition img{
+    padding-top: 50px;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.team_footer,
+.team_footer-info .reviews_calculate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.team_footer{
+    box-shadow: 0px -24px 99px 24px var(--dark_bg);
+    max-width: 100%;
+    position: absolute;
+    z-index: 2;
+}
+
+.team_footer-info .reviews_calculate a{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: right;
+    text-decoration-line: underline;
+    max-width: 360px;
+}
+
+.team_person{
+    position: absolute;
+}

@@ -1,10 +1,12 @@
 .portfolio {
     background-color: var(--dark_bg);
 }
+
 .portfolio_title{
     padding-top: 100px;
     padding-bottom: 80px;
 }
+
 .portfolio_title span{
     font-weight: 300;
     font-size: 16px;
@@ -30,6 +32,7 @@
     border:1px solid var(--light_bg);
     border-radius: 5px;
 }
+
 .carousel_item-header img{
     width: 100px;
     height: 100px;
@@ -45,6 +48,7 @@
     border-bottom-right-radius: 5px;
     text-align: center;
 }
+
 .carousel_item-text p{
     max-width: 300px;
     text-align: center;
@@ -52,6 +56,7 @@
     padding: 30px;
     font-weight: 700;
 }
+
 .carousel_item-text a{
     display: block;
     padding-bottom: 25px;
@@ -62,6 +67,7 @@
     text-decoration: none;
     position: relative;
 }
+
 .carousel_item-text a::after{
     content: '';
     display: inline-block;
@@ -71,12 +77,13 @@
     bottom: 25px;
     left: 42%;
 }
+
 p .w300{
     font-weight: 300;
 }
 
 .portfolio_footer{
-    padding-bottom: 400px;
+    padding-bottom: 100px;
 }
 
 .portfolio_footer .button{
