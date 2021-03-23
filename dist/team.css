@@ -40,6 +40,7 @@ p .w600{
 
 .team_composition{
     padding-bottom: 550px;
+    position: relative;
 }
 .team_composition img{
     padding-top: 50px;
@@ -52,12 +53,19 @@ p .w600{
 .team_footer-info .reviews_calculate{
     display: flex;
     justify-content: space-between;
+
+}
+
+.team_footer-info .reviews_calculate{
+    flex-direction: row-reverse;
 }
 
 .team_footer{
-    box-shadow: 0px -24px 99px 24px var(--dark_bg);
-    max-width: 100%;
+    box-shadow: 0 -20px 72px 57px var(--dark_bg);
+    background-color: var(--dark_bg);
+    width: 100%;
     position: absolute;
+    bottom: 40%;
     z-index: 2;
 }
 
@@ -70,6 +78,39 @@ p .w600{
     max-width: 360px;
 }
 
+.team_footer-info .reviews_calculate .questions{
+    margin-top: 0;
+    margin-right: 95px;
+}
+
+.team_footer-info .reviews_calculate .questions .questions_tooltip{
+    max-width: 350px;
+}
+
+.team_footer .container{
+    width: 1300px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
 .team_person{
     position: absolute;
+    top: 0;
+}
+
+.team_person-info{
+    position: relative;
+    padding-bottom: 40px;
+}
+
+.team_person-info span{
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    background-color: var(--red_btn);
+    position: absolute;
+    top: -25%;
+    left: -17px;
+    z-index: 5;
 }
