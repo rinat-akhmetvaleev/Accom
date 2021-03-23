@@ -39,7 +39,7 @@ p .w600{
 
 
 .team_composition{
-    padding-bottom: 550px;
+    padding-bottom: 130px;
     position: relative;
 }
 .team_composition img{
@@ -61,11 +61,11 @@ p .w600{
 }
 
 .team_footer{
-    box-shadow: 0 -20px 72px 57px var(--dark_bg);
+    box-shadow: 0 -44px 72px 57px var(--dark_bg);
     background-color: var(--dark_bg);
     width: 100%;
     position: absolute;
-    bottom: 40%;
+    bottom: 11%;
     z-index: 2;
 }
 
