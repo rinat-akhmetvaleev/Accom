@@ -4,11 +4,13 @@
     padding-bottom: 150px;
 }
 
-.principle_subitem,
-.principle_carPark,
-.principle_accom-today{
+.principle_accom-today,
+.principle_history,
+.principle_carPark{
     display: none;
 }
+
+/*  Principle basis  */
 
 .principle_item .principle_title{
     font-size: 35px;
@@ -133,6 +135,12 @@
     background-image: url(../image/principle/icon/customer.svg);
 }
 
+.basis_principle ul li:nth-child(4){
+    padding-bottom: 0;
+}
+
+
+/*  History  */
 .history_text{
     max-width: 430px;
 }
@@ -177,4 +185,154 @@
 
 .button{
     display: inline-block;
+}
+
+
+/*  Car Park  */
+.carPak_text{
+    padding-top: 65px;
+}
+
+.carPak_text h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 50px;
+    margin-top: 0;
+}
+
+.carPak_text p{
+    max-width: 430px;
+    font-size: 16px;
+    line-height: 25px;
+    opacity: 0.8;
+    padding-bottom: 40px;
+}
+
+.basis_principle,
+.basis_carPark,
+.today_numbers{
+    background-color: var(--dark_bg);
+    padding: 35px;
+    border-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.basis_carPark p{
+    padding-bottom: 15px;
+}
+
+.today_numbers ul li,
+.car_park-list ul li{
+    list-style: none;
+    position: relative;
+    padding-bottom: 25px;
+}
+
+.carPark_subtext{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.8;
+}
+
+.car_park-list ul li::before{
+    content: '';
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    position: absolute;
+    left: -40px;
+    background-size: cover;
+}
+
+.car_park-list ul li:nth-child(1)::before{
+    background-image: url(../image/principle/icon/weight.svg);
+}
+
+.car_park-list ul li:nth-child(2)::before{
+    background-image: url(../image/principle/icon/lenght.svg);
+    width: 18px;
+    height: 8px;
+}
+
+.car_park-list ul li:nth-child(3)::before{
+    background-image: url(../image/principle/icon/heigth.svg);
+    width: 8px;
+    height: 18px;
+}
+
+.car_park-list ul li:nth-child(4)::before{
+    background-image: url(../image/principle/icon/product.svg);
+}
+
+.car_park-list ul li:nth-child(5)::before{
+    background-image: url(../image/principle/icon/full.svg);
+}
+
+.car_park-list ul li:nth-child(5){
+    padding-bottom: 0;
+}
+
+.carPark_image{
+    background-image: url(../image/principle/wagon.png);
+    width: 700px;
+    height: 581px;
+    background-size: cover;
+    border-radius: 5px;
+    margin-top: 80px;
+}
+/*
+.carPark_image {
+    padding-top: 65px;
+}
+
+.carPark_image img{
+    width: 600px;
+    height: 500px;
+} */
+
+/*  Accom today  */
+.today_text h2{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    padding-top: 50px;
+}
+.today_numbers{
+    min-width: 400px;
+}
+
+.today_numbers ul li{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+}
+.accom_today-list li{
+    padding-bottom: 15px;
+}
+
+.today_numbers ul li span{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 20px;
+    letter-spacing: 0.06em;
+    color: var(--gold);
+}
+
+.today_numbers ul p{
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.7;
+    padding-bottom: 36px;
+}
+
+.accom_today_image{
+    padding-top: 50px;
+    position: relative;
+}
+.accom_today_image img{
+    position: absolute;
+    right: -200px;
+    top: 125px;
 }
