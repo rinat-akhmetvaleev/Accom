@@ -5,12 +5,14 @@
 }
 
 .principle_accom-today,
-.principle_history,
+.principle_subitem,
 .principle_carPark{
     display: none;
 }
 
 /*  Principle basis  */
+
+
 
 .principle_item .principle_title{
     font-size: 35px;
@@ -335,4 +337,55 @@
     position: absolute;
     right: -200px;
     top: 125px;
+}
+
+
+/*  Modal  */
+
+.history_modal-active{
+    visibility: visible;
+}
+
+.history_modal-moved{
+    visibility: hidden;
+}
+
+.history_modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--dark_bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.history_modal .principle_wrap{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--light_bg);
+    padding: 70px;
+    width: 1080px;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.history_modal-text{
+    max-width: 500px;
+}
+
+.history_modal-image{
+    display: flex;
+    position: relative;
+}
+
+.history_modal-image img{
+    height: 639px;
+}
+
+.history_modal-image img:nth-child(1){
+    position: absolute;
+    left: -291px;
 }
