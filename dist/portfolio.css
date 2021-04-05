@@ -58,7 +58,7 @@
 }
 
 .carousel_item-text a{
-    display: block;
+    display: inline-block;
     padding-bottom: 25px;
     font-size: 16px;
     line-height: 25px;
@@ -75,7 +75,7 @@
     border-bottom: 1px solid var(--red_btn);
     position: absolute;
     bottom: 25px;
-    left: 42%;
+    left: -3%;
 }
 
 p .w300{

@@ -35,6 +35,8 @@
     padding: 50px 40px;
     border-radius: 5px;
     display: inline-block;
+    position: relative;
+    z-index: 2;
 }
 .audit_questions ul li{
     padding: 15px 0 15px 40px;
