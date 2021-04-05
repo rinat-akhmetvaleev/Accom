@@ -1,3 +1,100 @@
-/* .aplication{
+.aplication{
     background-color: var(--light_bg);
+}
+
+.aplication_header{
+    padding-top: 110px;
+    padding-bottom: 110px;
+    text-align: center;
+}
+
+.aplication_header h2{
+    font-size: 35px;
+}
+
+.aplication_header h2.w300{
+    font-weight: 300;
+}
+
+.aplication_header h2 .w600{
+    font-weight: 600;
+}
+
+.aplication_header-text{
+    display: flex;
+    justify-content: center;
+}
+
+.aplication_header-text span{
+    font-weight: 300;
+    font-size: 16px;
+    vertical-align: super;
+    position: relative;
+    border: 1px solid #545061;
+    border-radius: 5px;
+    padding: 19px 21px 14px 21px;
+}
+
+/* .aplication_backgroung{
+    background-image: url(../image/application/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
 } */
+
+.aplication_backgroung {
+    position: relative;
+    z-index: 1;
+}
+.aplication_backgroung img{
+    width: 100%;
+    box-shadow: 0px 0px 100px 83px var(--dark_bg) inset;
+    position: absolute;
+    z-index: 2;
+    right: -280px;
+    top: -100px;
+}
+
+.aplication_body{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.aplication_body img{
+    width: 750px;
+    z-index: 3;
+    position: relative;
+    padding-bottom: 100px;
+}
+
+.submit_aplication .btn{
+    position: absolute;
+    z-index: 2;
+    bottom: -150px;
+    left: -200px;
+    width: 250px;
+}
+
+.submit_aplication{
+    position: relative;
+}
+
+.comp_banner{
+    position: absolute;
+    top: -140px;
+    left: -200px;
+    z-index: 2;
+    padding: 40px 40px 40px 90px;
+    width: 400px;
+    background-color: var(--dark_bg);
+}
+
+.arrow{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 90px;
+}
+
+
