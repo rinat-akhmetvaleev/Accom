@@ -36,6 +36,7 @@
     display: flex;
     background-color: #353141;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 .headache_card img{
     max-width: 283px;

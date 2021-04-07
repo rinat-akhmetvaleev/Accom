@@ -1,5 +1,6 @@
 .aplication{
     background-color: var(--light_bg);
+    padding-bottom: 300px;
 }
 
 .aplication_header{
@@ -87,6 +88,7 @@
     padding: 40px 40px 40px 90px;
     width: 400px;
     background-color: var(--dark_bg);
+    border-radius: 5px;
 }
 
 .arrow{
@@ -97,4 +99,160 @@
     padding-bottom: 90px;
 }
 
+.card_back{
+    display: none;
+}
 
+.all_work h2{
+    font-size: 30px;
+    line-height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.work_kards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    padding-bottom: 80px;
+}
+
+.work_kard{
+    border: 1px solid var(--border_gery);
+    border-radius: 5px;
+    position: relative;
+}
+
+.work_kard span{
+    padding: 40px;
+    display: block;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--gold);
+}
+
+.work_kard h4,
+.work_kard p{
+    padding-left: 40px;
+}
+
+.work_kard p{
+    padding-bottom: 100px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--grey_light);
+}
+
+.work_kard h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.work_kard:nth-child(1):after{
+    content: '01';
+}
+.work_kard:nth-child(3):after{
+    content: '02';
+}
+.work_kard:nth-child(5):after{
+    content: '03';
+}
+.work_kard:nth-child(7):after{
+    content: '04';
+}
+.work_kard:nth-child(9):after{
+    content: '05';
+}
+.work_kard:nth-child(11):after{
+    content: '06';
+}
+.work_kard{
+    overflow: hidden;
+}
+
+.work_kard:after{
+    font-weight: 700;
+    font-size: 150px;
+    line-height: 183px;
+    opacity: 0.03;
+    position: absolute;
+    right: 0;
+    bottom: -65px;
+}
+
+.work_footer{
+    position: relative;
+    padding-bottom: 110px;
+}
+.work_bg{
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    box-shadow: inset 0px 0px 150px 250px #3c384b,
+                inset 0px 0px 80px 20px #3c384b;
+}
+
+.wor_wrap{
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.wor_wrap h2{
+    padding-top: 35px;
+    padding-bottom: 70px;
+}
+
+.wor_wrap .reviews_calculate{
+    align-items: center;
+}
+
+.list{
+    width: 380px;
+    background-color: var(--dark_bg);
+    border-radius: 5px;
+    opacity: .7;
+    margin-bottom: 20px;
+    text-align: initial;
+    padding-left: 70px;
+    position: relative;
+}
+
+.list:last-child{
+    margin-bottom: 50px;
+}
+
+.list::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 28px;
+    height: 28px;
+}
+
+.list:nth-child(1):before{
+    background-image: url(../image/application/icon/neatly.svg);
+}
+.list:nth-child(2):before{
+    background-image: url(../image/application/icon/signature.svg);
+}
+.list:nth-child(3):before{
+    background-image: url(../image/application/icon/payment.svg);
+}
+
+.list p{
+    opacity: 1;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

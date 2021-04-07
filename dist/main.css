@@ -3,7 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     color: #fff;
-    background-color: #3C384B;
+    background-color: var(--light_bg);
 }
 
 .container{
@@ -22,17 +22,18 @@ body {
 .btn {
     padding: 16px 25px;
     background: transparent;
-    border: 1px solid #E43E56;
+    border: 1px solid var(--red_btn);
     box-shadow: none;
     border-radius: 5px;
-    color: #fff;
+    color: var(--grey_light-hover);
     outline: none;
     cursor: pointer;
     transition: all .5s ease;
+    max-width: 280px;
 }
 .btn:hover{
-    background: #EB3F57;
-    box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.25),
+    background: var(--red_btn);
+    box-shadow: inset 0px 4px 20px var(--border_gery),
                       0 0 79px -18px #FF0000;
 }
 
@@ -41,7 +42,7 @@ body {
     font-size: 16px;
     vertical-align: top;
     position: relative;
-    border:  1px solid #545061;
+    border:  1px solid var(--border_gery);
     border-radius: 5px;
     padding: 19px 21px 14px 21px;
 }
