@@ -22,7 +22,8 @@
     margin: 0;
 }
 
-.principle_menu{
+.principle_menu,
+.bonus_menu{
     padding-top: 35px;
     padding-bottom: 50px;
 }
@@ -35,7 +36,8 @@
     border-radius: 5px;
 }
 
-.principle_menu ul li{
+.principle_menu ul li,
+.bonus_menu ul li{
     list-style: none;
     padding: 10px 100px;
     opacity: .5;
