@@ -121,8 +121,8 @@ h2.sub_title {
     cursor: auto;
     max-width: 500px;
     line-height: 25px;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--dark);
 }
 
 .first_title:hover .tooltip{
@@ -134,7 +134,7 @@ h2.sub_title {
     position: absolute;
     top: -10px;
     left: 10%;
-    border-left: 10px solid #fff;
+    border-left: 10px solid var(--white);
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
@@ -145,7 +145,28 @@ h2.sub_title {
     top: -10px;
     left: calc(10% - 20px);
     border-left: 10px solid transparent;
-    border-right: 10px solid #fff;
+    border-right: 10px solid var(--white);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px) {
+    .container{
+        width: 740px;
+        margin: auto;
+    }
+    .category{
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .subcat{
+        width: 50%;
+    }
+
+    .inform .inform_image{
+        left: 0;
+    }
 }
