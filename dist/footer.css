@@ -1,0 +1,169 @@
+.footer_body, footer{
+    background-color: var(--dark_bg);
+}
+
+.footer_content{
+    padding-top: 100px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_inform h3{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+.footer_inform p{
+    max-width: 410px;
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+
+.footer_button{
+    display: inline-block;
+    background-color: var(--light_bg);
+    border-radius: 5px;
+    padding: 5px;
+}
+.footer_btn{
+    background-color: var(--light_bg);
+    padding: 10px 35px;
+    border: 1px solid var(--dark_bg);
+    color: #fff;
+    opacity: .5;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+.footer_btn--active{
+    background-color: var(--red_btn);
+    border: 1px solid var(--light_bg);
+    opacity: 1;
+}
+
+.footer_nav{
+    display: flex;
+    flex-direction: column;
+    padding: 45px 0;
+}
+.footer_nav .social{
+    padding-bottom: 25px;
+}
+
+.footer_body{
+    position: relative;
+    z-index: 2;
+}
+
+.footer_bg{
+    padding-top: 70px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.footer_nav .telephone{
+    padding-left: 35px;
+}
+
+.footer_nav .telephone>.tell::before{
+    left: 39px;
+}
+
+.addres{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.addres p,
+.addres h4{
+    margin: 0;
+}
+
+.first{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.second{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.three{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.four{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+.first,
+.second{
+    font-size: 14px;
+    line-height: 184%;
+    letter-spacing: 0.05em;
+}
+
+.three,
+.four{
+    font-size: 14px;
+    line-height: 184%;
+    letter-spacing: 0.05em;
+    color: var(--grey_light);
+}
+
+
+
+.f_right {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+.footer_menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_menu ul,
+.made_in{
+    display: flex;
+}
+
+.footer_menu ul li{
+    list-style: none;
+    padding-left: 40px;
+}
+
+footer{
+    padding: 40px 0;
+}
+
+.footer_menu a{
+    text-decoration: none;
+    color: var(--grey_light-hover);
+}
+
+.footer_menu ul li a:hover{
+    text-decoration: underline;
+    color: var(--red_btn);
+    transition: .2s ease;
+}
