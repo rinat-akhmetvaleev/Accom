@@ -7,7 +7,23 @@
     --grey_light: rgba(255, 255, 255, 0.6);
     --grey_light-hover: rgba(255, 255, 255, 1);
     --red_btn: #E43E56;
+    --red: #f00;
     --gold: #FFC582;
     --white: #fff;
     --dark: #000;
+}
+
+
+/* Responsive */
+
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+
+}
+
+@media (max-width: 575px){
+
 }

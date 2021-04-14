@@ -21,7 +21,7 @@
 }
 
 .headache .container p{
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--grey_light);
 }
 
 .list_card{
@@ -34,7 +34,7 @@
 .headache_card{
     max-width: 630px;
     display: flex;
-    background-color: #353141;
+    background-color: var(--dark_bg);
     margin-bottom: 30px;
     border-radius: 5px;
 }
@@ -71,19 +71,14 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
-
     padding: 25px;
-    background: #D4445E;
-    border: 1px solid #E43E56;
-    box-shadow: none;
+    background: var(--red_btn);
+    border: 1px solid var(--red_btn);
     border-radius: 5px;
-    color: #fff;
+    color: var(--white);
     transition: all .5s ease;
     position: relative;
-
-    background: #EB3F57;
-    box-shadow: inset 0px 4px 20px rgba(255, 255, 255, 0.25),
-                      0 0 79px -18px #FF0000;
+    box-shadow: 0 0 79px -18px var(--red);
 }
 .saved .saved_price::before{
     content: '';
@@ -100,10 +95,26 @@
     max-width: 400px;
     font-size: 15px;
     line-height: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid var(--grey_dark);
     border-radius: 0 5px 5px 0;
     padding: 19px 26px 20px 40px;
     margin: 0;
+}
+
+
+
+/* Responsive */
+
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+
+}
+
+@media (max-width: 575px){
+
 }
 
 

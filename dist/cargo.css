@@ -21,7 +21,7 @@
     position: absolute;
     left: 1010px;
     top: 0;
-    box-shadow: -5px -5px 200px 100px #514B62;
+    box-shadow: -5px -5px 200px 100px var(--light_bg);
     z-index: 10;
 }
   
@@ -84,7 +84,7 @@ h2 .cargo_features:not(:first-child){
     width: 38px;
     height: 38px;
     border: 1px solid var(--red_btn);
-    color: #fff;
+    color: var(--white);
     box-sizing: border-box;
     background-color: transparent;
     border-radius: 5px;
@@ -166,8 +166,8 @@ h2 .cargo_features:not(:first-child){
     cursor: auto;
     max-width: 500px;
     line-height: 25px;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--dark);
     z-index: 999;
 }
 
@@ -180,7 +180,7 @@ h2 .cargo_features:not(:first-child){
     position: absolute;
     top: -10px;
     left: 10%;
-    border-left: 10px solid #fff;
+    border-left: 10px solid var(--white);
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
@@ -191,7 +191,82 @@ h2 .cargo_features:not(:first-child){
     top: -10px;
     left: calc(10% - 20px);
     border-left: 10px solid transparent;
-    border-right: 10px solid #fff;
+    border-right: 10px solid var(--white);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
+}
+
+
+/* Responsive */
+
+
+@media (max-width: 991px){
+    .bg_image{
+        z-index: -1;
+    }
+
+    h2 .cargo_features:not(:first-child){
+        position: absolute;
+        top: -71px;
+        left: 0;
+        margin-bottom: 10px;
+        width: 285px;
+        height: 40px;
+        font-size: 12px;
+        line-height: 38px;
+    }
+
+    .cargo_info h2{
+        font-size: 20px;
+        margin-bottom: 30px;
+        line-height: 31px;
+        padding-top: 15px;
+    }
+    
+}
+
+@media (max-width: 767px){
+    .inner{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inner .button{
+        display: none;
+    }
+}
+
+@media (max-width: 575px){
+    .bg_image{
+        background-size: contain;
+        background-position: 100% 75%;
+        right: auto;
+    }
+
+    .inner{
+        grid-template-columns: 1fr;
+        padding-top: 0;
+    }
+
+    .short_inner{
+        flex-direction: inherit;
+        justify-content: start;
+    }
+
+    .section_foter{
+        flex-direction: column;
+    }
+
+    .card_toch {
+        padding-top: 25px;
+        padding-left: 0;
+    }
+
+    .card_toch .btn{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card_toch .questions{
+        padding-top: 0;
+    }
 }
