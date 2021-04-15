@@ -28,9 +28,11 @@
     padding-top: 90px;
     columns: 570px 2;
 }
+
 .list_card:nth-child(1){
     padding-right: 30px;
 }
+
 .headache_card{
     max-width: 630px;
     display: flex;
@@ -38,7 +40,8 @@
     margin-bottom: 30px;
     border-radius: 5px;
 }
-.headache_card img{
+
+.headache_card_image{
     max-width: 283px;
     flex-wrap: wrap;
 }
@@ -106,15 +109,100 @@
 /* Responsive */
 
 @media (max-width: 991px){
+    .headache_card_text {
+        padding: 25px;
+    }
 
-}
+    .title{
+        position: relative;
+        padding-top: 80px;
+        font-size: 20px;
+        line-height: 31px;
+    }
 
-@media (max-width: 767px){
+    .font_span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 10px 20px;
+        height: auto;
+        font-size: 12px;
+        line-height: 19px;
+        margin-bottom: 12px;
+        text-align: left;
+    }
 
+
+    .btn{
+        max-width: inherit;
+        width: 100%;
+    }
+
+    .saved{
+        padding-top: 40px;
+        padding-bottom: 0;
+        flex-direction: column;
+    }
+
+    .saved p{
+        max-width: inherit;
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .saved_price{
+        text-align: center;
+    }
 }
 
 @media (max-width: 575px){
+    .headache_card{
+        display: block;
+        height: auto;
+    }
 
+    .headache_card_image {
+        border-radius: 5px 5px 0 0;
+        width: 100%;
+        height: 170px;
+        max-width: inherit;
+    }
+
+    .headache_card_image img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+
+    .headache_card_text img{
+        padding-top: 0;
+    }
+
+    .headache_card_text *{
+        padding-left: 0;
+    }
+
+    .headache_card_text h4{
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .headache_card_text p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+
+    .headache_subtitle{
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 27px;
+    }
+
+    .list_card{
+        padding-top: 15px;
+    }
 }
 
 

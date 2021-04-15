@@ -23,7 +23,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 25px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--grey_light);
     max-width: 355px;
     margin-right: 25px;
     text-align: center;
@@ -36,7 +36,7 @@
     line-height: 27px;
     position: relative;
     display: inline-block;
-    border: 1px solid #545061;
+    border: 1px solid var(--border_gery);
     border-radius: 5px;
     padding: 15px 21px 3px 50px;
 }
@@ -66,7 +66,7 @@
 }
 
 .transit_card{
-    background-color: #332F41;
+    background-color: var(--dark_bg);
     border-radius: 5px;
 }
 
@@ -89,12 +89,76 @@
     height: 870px;
 }
 
-@media screen and (max-width: 1800px){
+
+
+/* Responsive */
+
+@media (max-width: 1500px){
     .transit_bg{
         right: 5%;
+        z-index: -1;
     }
 }
 
+@media (max-width: 767px){
+    .transit_cards{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .route_bg,
+    .embellishment{
+        display: none;
+    }
+}
+
+@media (max-width: 575px){
+    .tt{
+        padding-top: 0;
+        font-size: 20px;
+        line-height: 31px;
+    }
+
+    .transit_title .tt{
+        text-align: inherit;
+    }
+
+    .transit_title{
+        align-items: baseline;
+    }
+
+    .transit_title h2{
+        padding-bottom: 0;
+    }
+
+    .transit_subtitle{
+        display: block;
+    }
+
+    .transit_cards{
+        grid-template-columns: 1fr;
+    }
+
+    .transit_bg{
+        display: none;
+    }
+
+    .transit_card p:first-child{
+        opacity: .2;
+    }
+
+    .transit_card p:last-child{
+        opacity: .7;
+    }
+
+    .direction{
+        padding-top: 0;
+    }
+
+    .route_title h2{
+        font-size: 20px;
+        line-height: 31px;
+    }
+}
 
 
 
