@@ -408,3 +408,25 @@ span.mw-270 {
 .form .form_container-active{
     display: block;
 }
+
+
+/* Responsive */
+
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+    .route_bg,
+    .embellishment{
+        display: none;
+    }
+}
+
+@media (max-width: 575px){
+    .route_title h2{
+        font-size: 20px;
+        line-height: 31px;
+    }
+}
+
