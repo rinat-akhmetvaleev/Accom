@@ -56,6 +56,7 @@
     padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
+    border-radius: 5px;
 }
 .form_subtitle{
     padding-bottom: 25px;
@@ -399,9 +400,7 @@ span.mw-270 {
 
 
 /* JS manipulation */
-.form_container{
-    /* display: none; */
-}
+
 .get_date{
     display: none;
 }
@@ -421,12 +420,56 @@ span.mw-270 {
     .embellishment{
         display: none;
     }
+
+    .route_title h2{
+        position: relative;
+    }
+
+    .route_title span{
+        position: absolute;
+        top: 110px;
+        left: -25px;
+    }
+
+    .route_subtitle{
+        padding-top: 50px;
+    }
+
+    .form{
+        flex-direction: column;
+    }
+
+    .form_container{
+        width: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .you_get{
+        padding-bottom: 0;
+        width: auto;
+        border: 1px solid var(--gold);
+    }
+
+    .you_get ul li{
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 20px;
+        max-width: none;
+    }
 }
 
 @media (max-width: 575px){
     .route_title h2{
         font-size: 20px;
         line-height: 31px;
+    }
+
+    .route_title span{
+        top: 45px;
+    }
+
+    .form_subtitle a {
+        padding: 25px;
     }
 }
 
