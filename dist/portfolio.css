@@ -100,3 +100,43 @@ p .w300{
 
 
 
+/* Responsive */
+
+@media (max-width: 991px){
+    .carousel{
+        gap: 20px;
+    }
+}
+
+@media (max-width: 767px){
+    .review_title{
+        line-height: normal;
+    }
+    .carousel{
+        flex-direction: column;
+    }
+
+    .portfolio_footer .button{
+        padding-bottom: 0;
+    }
+
+    .portfolio_footer-info{
+        flex-direction: column-reverse;
+    }
+
+    .questions{
+        padding-top: 0;
+    }
+
+    .reviews_calculate .btn{
+        margin-top: 20px;
+    }
+
+    .carousel_item{
+        width: auto;
+    }
+
+    .carousel_item-text p{
+        max-width: none;
+    }
+}

@@ -15,7 +15,7 @@
     font-size: 16px;
     vertical-align: super;
     position: relative;
-    border: 1px solid #545061;
+    border: 1px solid var(--border_gery);
     border-radius: 5px;
     padding: 19px 21px 14px 21px;
     margin-left: 25px;
@@ -41,7 +41,7 @@
 .audit_questions ul li{
     padding: 15px 0 15px 40px;
     list-style: none;
-    color: #FFC582;
+    color: var(--gold);
     position: relative;
 }
 .audit_questions ul li::before{
@@ -53,7 +53,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background-color: #FFC582;
+    background-color: var(--gold);
 }
 .audit_questions p{
     padding-top: 30px;
@@ -175,7 +175,7 @@
     background-color: var(--dark_bg);
     padding: 10px 35px;
     border: 1px solid var(--dark_bg);
-    color: #fff;
+    color: var(--white);
     opacity: .5;
     border-radius: 5px;
     outline: none;
@@ -283,7 +283,7 @@
 
 .slide_btn{
     text-decoration: none;
-    color: #fff;
+    color: var(--white);
     font-size: 14px;
     line-height: 41px;
     padding: 20px 35px;
@@ -337,8 +337,8 @@
     cursor: auto;
     max-width: 500px;
     line-height: 25px;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--white);
+    color: var(--dark);
     z-index: 999;
 }
 
@@ -351,7 +351,7 @@
     position: absolute;
     top: -10px;
     right: 10%;
-    border-left: 10px solid #fff;
+    border-left: 10px solid var(--white);
     border-right: 10px solid transparent;
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
@@ -362,9 +362,132 @@
     top: -10px;
     right: calc(17% - 20px);
     border-left: 10px solid transparent;
-    border-right: 10px solid #fff;
+    border-right: 10px solid var(--white);
     border-top: 10px solid transparent;
     border-bottom: 10px solid transparent;
 }
 
+.questions{
+    padding-top: 50px;
+    position: relative;
+}
 
+.question_wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.question_form h4{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+}
+
+.question_form{
+    background-color: var(--dark_bg);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 50px 55px 50px;
+    margin-bottom: 30px;
+}
+
+.question_form .btn{
+    width: 100%;
+    max-width: none;
+}
+
+.question_form textarea{
+    margin: 30px 0;
+    width: 100%;
+    height: 160px;
+    background: var(--grey_dark);
+    border: 1px solid var(--border_gery);
+    color: var(--grey_light);
+    box-sizing: border-box;
+    border-radius: 5px;
+    outline: none;
+    padding: 25px 30px;
+    resize: none;
+}
+
+.question_form-wrap {
+    text-align: center;
+}
+
+.question_bg{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+/* Responsive */
+
+
+@media (max-width: 575px){
+    .free_audit-image::before,
+    .audit_girl{
+        display: none;
+    }
+
+    .audit_title span{
+        margin-left: 0;
+    }
+
+    .audit_questions ul{
+        display: block;
+    }
+
+    .audit_questions p{
+        padding-bottom: 100px;
+    }
+
+
+    /* Reviews */
+
+    .reviews_text{
+        flex-direction: column;
+    }
+
+    .customer_contacts{
+        margin-bottom: 40px;
+    }
+
+    .slide_info{
+        padding-right: 0;
+    }
+
+    .slid_1,
+    .reviews_footer{
+        flex-direction: column;
+    }
+
+    .slide_bg{
+        padding-top: 25px;
+    }
+
+    .reviews_footer-info{
+        padding-top: 25px;
+        flex-direction: column-reverse;
+    }
+
+    .questions{
+        padding-top: 0;
+        padding-bottom: 25px;
+    }
+
+    .reviews_info p{
+        margin: 0;
+    }
+
+    .reviews_footer{
+        margin-bottom: 30px;
+    }
+}

@@ -15,14 +15,14 @@
     font-size: 16px;
     vertical-align: top;
     position: relative;
-    border: 1px solid #545061;
+    border: 1px solid var(--grey_light);
     border-radius: 5px;
     padding: 19px 21px 14px 21px;
     margin-left: 25px;
 }
 .red{
     display: inline-block;
-    color: #E43E56;
+    color: var(--red_btn);
     font-weight: 700;
 }
 .route_subtitle{
@@ -47,10 +47,10 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 27px;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--grey_light);
 }
 .form{
-    background-color: #3C374B;
+    background-color: var(--light_bg);
     padding-left: 50px;
     position: relative;
     padding-bottom: 50px;
@@ -63,14 +63,14 @@
 }
 .form_subtitle a{
     text-decoration: none;
-    background-color: rgba(255, 255, 255, 0.03);
+    background-color: var(--grey_dark);
     padding: 25px 53px;
     border-radius: 5px 5px 0 0;
     cursor: pointer;
     color: inherit;
 }
 .form_subtitle .active{
-    background-color: #3C374B;
+    background-color: var(--light_bg);
 }
 
 .points{
@@ -78,7 +78,7 @@
     margin-top: 25px;
 }
 .you_get{
-    background-color: #302C3D;
+    background-color: var(--dark_bg);
     display: inline-block;
     border-radius: 5px;
     width: 300px;
@@ -138,23 +138,22 @@
     max-width: 300px;
     width: 100%;
     padding: 20px 25px;
-    background: rgba(255, 255, 255, 0.1);
-    border: 1px solid #EB3F57;
+    background: var(--grey_dark);
     box-sizing: border-box;
     border-radius: 5px;
     outline: none;
     font-size: 14px;
     line-height: 29px;
-    color: #fff;
+    color: var(--white);
     /* opacity: .5; */
 }
 .form_container>input:focus{
-    border: 1px solid #EB3F57;
+    border: 1px solid var(--red_btn);
 }
 .form_container>input:placeholder-shown{
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--border_gery);
     /* opacity: 1; */
-    color: rgba(255, 255, 255, 0.487);
+    color: var(--grey_light);
 }
 .mw-270{
     max-width: 330px;
@@ -173,13 +172,13 @@
     font-size: 45px;
     line-height: 20px;
     text-align: center;
-    color: #FFFFFF;
+    color: var(--white);
     opacity: 0.2;
 }
 .tell{
     font-size: 14px;
     line-height: 25px;
-    color: rgba(255, 255, 255, 0.5);
+    color: var(--grey_light);
 }
 .attach::before{
     content: '';
@@ -282,11 +281,12 @@ span.mw-270 {
 /* tab cost calculation */
 .get_date{
     padding-top: 60px;
+    padding-right: 30px;
 }
 .get_title--short{
     padding: 15px 30px;
     font-size: 16px;
-    background: rgba(255, 255, 255, 0.05);
+    background: var(--grey_dark);
     border-radius: 5px;
 }
 .get_sub-title{
@@ -322,19 +322,19 @@ span.mw-270 {
 .share{
     align-self: center;
     justify-self: center;
-    background: #FFF;
+    background: var(--white);
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    color: #000;
+    color: var(--dark);
     padding: 20px 30px 20px 40px;
     width: 125px;
     text-align: center;
     cursor: pointer;
 }
 .share:hover{
-    background: #EB3F57;
-    box-shadow: 0px 0px 20px 5px rgba(255, 0, 0, 0.501);
-    color: #fff;
+    background: var(--red_btn);
+    box-shadow: 0px 0px 20px 5px var(--red);
+    color: var(--white);
 }
 .share::before{
     content: '';
@@ -358,7 +358,7 @@ span.mw-270 {
     background-image: url(../image/icon/telegram.svg);
 }
 .share:hover .share_1::before{
-    fill: #fff;
+    fill: var(--white);
 }
 
 
@@ -456,6 +456,10 @@ span.mw-270 {
         line-height: 20px;
         max-width: none;
     }
+
+    .number_info--wrapper>img{
+        display: none;
+    }
 }
 
 @media (max-width: 575px){
@@ -525,6 +529,19 @@ span.mw-270 {
     .quest {
         grid-column-start: 1;
         grid-row-start: 14;
+    }
+
+    .not_call{
+        flex-direction: column;
+    }
+
+    .not_call .btn{
+        width: 100%;
+    }
+
+    .not_call--text{
+        width: 100%;
+        margin-left: 0;
     }
 }
 
