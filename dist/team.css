@@ -18,7 +18,7 @@ p .w600{
     line-height: 25px;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.2);
+    color: var(--border_gery);
     padding: 30px 0;
     margin: 0;
 }
@@ -34,7 +34,7 @@ p .w600{
 .team_info p{
     font-size: 16px;
     line-height: 25px;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--grey_light);
 }
 
 
@@ -113,4 +113,30 @@ p .w600{
     top: -25%;
     left: -17px;
     z-index: 5;
+}
+
+
+
+/* Responsive */
+
+
+@media (max-width: 767px){
+    .team_footer .container{
+        flex-direction: column;
+    }
+
+    .reviews_calculate{
+        flex-direction: column-reverse !important;
+    }
+}
+
+@media (max-width: 575px){
+    .team_composition img,
+    .team_person{
+        display: none;
+    }
+
+    .team_footer{
+        bottom: -90%;
+    }
 }

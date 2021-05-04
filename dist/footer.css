@@ -167,3 +167,47 @@ footer{
     color: var(--red_btn);
     transition: .2s ease;
 }
+
+
+
+/* Responsive */
+
+@media (max-width: 991px){
+
+}
+
+@media (max-width: 767px){
+    .footer_content {
+        padding-top: 50px;
+    }
+
+    .footer_bg{
+        display: none;
+    }
+
+    .footer_inform p{
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .flex{
+        flex-direction: column;
+    }
+
+    .f_right{
+        margin-top: 25px;
+    }
+
+    .footer_menu,
+    .footer_menu ul{
+        flex-direction: column;
+    }
+
+    .footer_menu{
+        align-items: center;
+    }
+}
+
+@media (max-width: 575px){
+
+}

@@ -480,7 +480,7 @@
 
     .questions{
         padding-top: 0;
-        padding-bottom: 25px;
+        padding-bottom: 0px;
     }
 
     .reviews_info p{
@@ -489,5 +489,20 @@
 
     .reviews_footer{
         margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 767px){
+    .question_wrap{
+        flex-direction: column;
+    }
+
+    .question_form-wrap{
+        width: -webkit-fill-available;
+        padding-top: 25px;
+    }
+
+    .question_form{
+        padding: 10px 15px;
     }
 }

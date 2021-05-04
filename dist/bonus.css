@@ -209,3 +209,12 @@
     right: -200%;
 }
 
+
+
+
+@media (max-width: 767px){
+    .bonus{
+        padding-bottom: 0;
+    }
+}
+
